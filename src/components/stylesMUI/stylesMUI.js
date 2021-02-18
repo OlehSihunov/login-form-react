@@ -13,7 +13,7 @@ const theme = createMuiTheme({
   })
 
 const Styles = () => {
-    const useStyles = makeStyles((theme)=>({
+    const useStyles = makeStyles(theme => ({
         btn:{
             marginTop: '80px',
             width: '220px',
@@ -59,7 +59,6 @@ const Styles = () => {
                 lineHeight: "10px"
               }
         }
-    
     }))
     return useStyles()
   }

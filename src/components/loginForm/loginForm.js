@@ -14,7 +14,7 @@ const LoginForm = () => {
     const [emailError,setEmailError] = useState(false)
     const [passwordError,setPasswordError] = useState(false)
 
-    const handleSubmit = (e) => {
+    const handleSubmit = () => {
       !email?setEmailError(true):setEmailError(false)
       !password?setPasswordError(true) : setPasswordError(false)
       if(email !== ''&&password !== ''){
@@ -34,11 +34,11 @@ const LoginForm = () => {
             !e.target.value?setPasswordError(true):setPasswordError(false)
         }
     }
-   
+
     const classes  = Styles()
     return(
         <div className = 'login-form' id = 'login-form'>
-                    <h1  >LOGIN</h1>
+                    <h1>LOGIN</h1>
                     <FormControl variant="outlined"
                      className={classes.textField}
                      error ={emailError}>
@@ -49,7 +49,7 @@ const LoginForm = () => {
                         onChange={(e) => handleField(e,'email')} 
                         label="Name" 
                         aria-describedby="component-error-email-text"/>
-                        <FormHelperText id="component-error-email-text">{passwordError?'Email Required':`\ `}</FormHelperText>
+                        <FormHelperText id="component-error-email-text">{emailError?'Email Required':`\ `}</FormHelperText>
                     </FormControl>
                     <FormControl variant="outlined"
                     className={classes.textField}
@@ -63,7 +63,7 @@ const LoginForm = () => {
                         aria-describedby="component-error-password-text"/>
                         <FormHelperText id="component-error-password-text">{passwordError?'Password Required':`\ `}</FormHelperText>
                     </FormControl>
-                    <Button className = {passwordError||emailError?classes.btnDis:classes.btn} size ='large' onClick = { () =>handleSubmit()}>LOG IN</Button>
+                    <Button className = {passwordError||emailError?classes.btnDis:classes.btn} size ='large' onClick = { () => handleSubmit()}>LOG IN</Button>
                     <p className = 'login-form__help-text_underlined'>Forgot your password?</p>
                     <p className = 'login-form__help-text'>Don’t have an account yet? <span>Register</span></p>
         </div>
