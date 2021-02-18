@@ -29,6 +29,21 @@ const Styles = () => {
                 height: '40px'
               }
         },
+        btnDis:{
+                marginTop: '80px',
+                width: '220px',
+                height: '48px',
+                background: '#B2B7BB',
+                borderRadius: '5px',
+                color: 'white',
+                fontSize:'19px',
+                fontWeight:'500',
+                [theme.breakpoints.down('xs')]: {
+                    marginTop: '60px',
+                    width: '165px',
+                    height: '40px'
+                  }
+        },
         textField:{
            width:"260px",
            marginTop:'24px',
