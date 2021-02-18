@@ -1,63 +1,20 @@
 import React, { useState } from 'react'
-import {Button,makeStyles,createMuiTheme} from '@material-ui/core'
+import {Button} from '@material-ui/core'
 import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import InputLabel from '@material-ui/core/InputLabel';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
 
 import './loginForm.css'
-const theme = createMuiTheme({
-    breakpoints: {
-      values: {
-        xs:375,
-        sm: 768,
-        md: 1024,
-        lg: 1440,
-      },
-    },
-  })
+import Styles from '../stylesMUI/stylesMUI';
 
 const LoginForm = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const handleSubmit = (e) => {
-        console.log(theme.breakpoints.down('xs'))
+      
     }
-    const useStyles = makeStyles((theme)=>({
-        btn:{
-            marginTop: '80px',
-            width: '220px',
-            height: '48px',
-            background: 'linear-gradient(90deg, #FF9146 0%, #FF351B 100%)',
-            borderRadius: '5px',
-            color: 'white',
-            fontSize:'19px',
-            fontWeight:'500',
-            [theme.breakpoints.down('xs')]: {
-                marginTop: '60px',
-                width: '165px',
-                height: '40px'
-              }
-        },
-        textField:{
-           width:"260px",
-           marginTop:'24px',
-           
-        },
-        inputField:{
-            [theme.breakpoints.down('xs')]: {
-                height: '40px',
-                borderRadius:'10px'
-              }
-        },
-        inputLabel:{
-            [theme.breakpoints.down('xs')]: {
-                lineHeight: "10px"
-              }
-        }
-
-    }))
-    const classes = useStyles()
+    const classes  = Styles()
     return(
         <div className = 'login-form' id = 'login-form'>
                     <h1  >LOGIN</h1>

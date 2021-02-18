@@ -42,3 +42,19 @@
   }
   
 }
+@media screen and (max-width: 376px) {
+  .App {
+    background-image:
+    url(./img/s-left.png),
+    url(./img/s-right.png),
+    url(./img/s-rectangle.png);
+    background-position:
+     bottom left,
+     bottom right,
+     bottom center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    justify-content:center;
+  }
+  
+}

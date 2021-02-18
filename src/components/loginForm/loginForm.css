@@ -22,6 +22,7 @@
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    color: #10204C;
 }
 .login-form > p {
     margin: 10px;
@@ -33,7 +34,7 @@
     color: #B2B7BB;
 }
 .login-form > p > span {
-    color: blue;
+    color: #4285F4
 }
 .login-form__help-text_underlined {
     text-decoration: underline;
