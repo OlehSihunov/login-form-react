@@ -9,14 +9,22 @@
     background: #FEFEFE;
     margin-right: 36px;
     padding: 23px;
+    box-sizing:border-box;
 }
 
 .login-form h1 {
     margin-top: 88px;
     margin-bottom: 44px;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 .login-form > p {
-    margin: 5px;
+    margin: 10px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -37,3 +45,37 @@
     margin-bottom: 110px;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .login-form {
+        height: 626px;
+        width: 488px;
+        
+    }
+  }
+@media screen and (max-width: 768px) {
+    .login-form {
+        
+        margin-right: 0px;
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    .login-form {
+        height: 488px;
+        width: 343px;
+        margin-right: 0px;
+    }
+    .login-form h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 24px;
+
+    }
+    .login-form > p {
+        margin: 10px;
+        font-size: 16px;
+        line-height: 150%;
+        color: #B2B7BB;
+    }
+  }
