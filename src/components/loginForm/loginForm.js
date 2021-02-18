@@ -4,7 +4,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import InputLabel from '@material-ui/core/InputLabel';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
-import './loginForm.css'
+import './loginForm.scss'
 import Styles from '../stylesMUI/stylesMUI';
 
 const LoginForm = () => {
@@ -61,9 +61,9 @@ const LoginForm = () => {
                         aria-describedby="component-error-password-text"/>
                         <FormHelperText id="component-error-password-text">{passwordError ? 'Password Required' : `\ `}</FormHelperText>
                     </FormControl>
-                    <Button className = {passwordError||emailError ? classes.btnDis : classes.btn} size ='large' onClick = { () => handleSubmit()}>log in</Button>
+                    <Button className = {` ${classes.btn} ${passwordError||emailError ? classes.btnDis : classes.btnAct}`} size ='large' onClick = { () => handleSubmit()}>log in</Button>
                     <p className = 'login-form__help-text_underlined'>Forgot your password?</p>
-                    <p className = 'login-form__help-text'>Don’t have an account yet? <span>Register</span></p>
+                    <p>Don’t have an account yet? <span>Register</span></p>
         </div>
     )
 }
