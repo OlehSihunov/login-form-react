@@ -23,6 +23,7 @@ const Styles = () => {
             color: 'white',
             fontSize:'19px',
             fontWeight:'500',
+            textTransofrm: 'Uppercase',
             [theme.breakpoints.down('xs')]: {
                 marginTop: '60px',
                 width: '165px',
@@ -38,6 +39,7 @@ const Styles = () => {
                 color: 'white',
                 fontSize:'19px',
                 fontWeight:'500',
+                textTransofrm: 'Uppercase',
                 [theme.breakpoints.down('xs')]: {
                     marginTop: '60px',
                     width: '165px',

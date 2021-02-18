@@ -23,6 +23,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: #10204C;
+    text-transform: uppercase;
 }
 
 .login-form > p {
@@ -80,7 +81,5 @@
     .login-form > p {
         margin: 10px;
         font-size: 16px;
-        line-height: 150%;
-        color: #B2B7BB;
     }
   }
